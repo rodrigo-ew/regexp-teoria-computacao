@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 @DisplayName("CPF")
 public class CPFValidatorTests {
 
-    private RegexValidator validator;
+    private RegexValidatorQ1 validator;
 
     @BeforeEach
     void setup() {
-        validator = new RegexValidator();
+        validator = new RegexValidatorQ1();
     }
 
     @Test

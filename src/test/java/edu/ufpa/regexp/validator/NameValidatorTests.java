@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Name")
 class NameValidatorTests {
 
-    private RegexValidator validator;
+    private RegexValidatorQ1 validator;
 
     @BeforeEach
     void setup() {
-        validator = new RegexValidator();
+        validator = new RegexValidatorQ1();
     }
 
     @Test

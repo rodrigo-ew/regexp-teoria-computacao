@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @DisplayName("Password")
 public class PasswordValidatorTests {
 
-    private RegexValidator validator;
+    private RegexValidatorQ1 validator;
 
     @BeforeEach
     void setup() {
-        validator = new RegexValidator();
+        validator = new RegexValidatorQ1();
     }
 
     @Test
