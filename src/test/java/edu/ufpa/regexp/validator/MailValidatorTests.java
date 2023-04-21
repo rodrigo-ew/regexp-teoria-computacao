@@ -10,12 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @DisplayName("Mail")
 public class MailValidatorTests {
 
-    private RegexValidatorQ1 validator;
-
-    @BeforeEach
-    void setup() {
-        validator = new RegexValidatorQ1();
-    }
+    private final RegexValidatorQ1 validator = new RegexValidatorQ1();;
 
     @Test
     @DisplayName("Deve aceitar a sentença - a@a.br")

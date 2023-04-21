@@ -10,12 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @DisplayName("Real Number")
 public class RealNumberValidatorTests {
 
-    RegexValidatorQ1 validator;
-
-    @BeforeEach
-    void setup() {
-        validator = new RegexValidatorQ1();
-    }
+    private final RegexValidatorQ1 validator = new RegexValidatorQ1();
 
     @Test
     @DisplayName("Deve aceitar a sentença - -25.467")

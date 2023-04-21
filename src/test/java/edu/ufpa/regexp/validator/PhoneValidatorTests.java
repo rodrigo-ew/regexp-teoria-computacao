@@ -10,12 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @DisplayName("Phone")
 public class PhoneValidatorTests {
 
-    private RegexValidatorQ1 validator;
-
-    @BeforeEach
-    void setup() {
-        validator = new RegexValidatorQ1();
-    }
+    private RegexValidatorQ1 validator = new RegexValidatorQ1();
 
     @Test
     @DisplayName("Deve aceitar a sentença - (91) 99999-9999")

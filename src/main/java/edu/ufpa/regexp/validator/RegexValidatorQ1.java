@@ -19,7 +19,7 @@ public class RegexValidatorQ1 {
 
     private final Pattern phonePattern = Pattern.compile("(\\([0-9]{2}\\)\\s9[0-9]{4}\\-?[0-9]{4})|([0-9]{2}\\s9[0-9]{8})");
 
-    private final Pattern dateTimePattern = Pattern.compile("");
+    private final Pattern dateTimePattern = Pattern.compile("[0-9]{2}\\/[0-9]{2}\\/[0-9]{4}\\s[0-9]{2}\\:[0-9]{2}\\:[0-9]{2}");
 
     public Boolean matchesName(String string) {
         return namePattern.matcher(string).matches();

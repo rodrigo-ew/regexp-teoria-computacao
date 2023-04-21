@@ -7,12 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Name")
 class NameValidatorTests {
 
-    private RegexValidatorQ1 validator;
-
-    @BeforeEach
-    void setup() {
-        validator = new RegexValidatorQ1();
-    }
+    private final RegexValidatorQ1 validator = new RegexValidatorQ1();;
 
     @Test
     @DisplayName("Deve aceitar a sentença - Ada Lovelace")
