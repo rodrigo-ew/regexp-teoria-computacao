@@ -8,17 +8,11 @@ import java.util.regex.*;
 public class RegexValidatorQ1 {
 
     private final Pattern namePattern = Pattern.compile("([A-Z][a-z]+\\s)([A-Z][a-z]+\\s)?([A-Z][a-z]+)");
-
     private final Pattern mailPattern = Pattern.compile("[a-z]+@[a-z]+(\\.com\\.br|\\.br)");
-
     private final Pattern passwordPattern = Pattern.compile("(?=.*[0-9])(?=.*[A-Z])[A-Za-z0-9]{8}");
-
     private final Pattern realNumber = Pattern.compile("^[+\\-]?[0-9]+(\\.[0-9]+)?$");
-
     private final Pattern CPFPattern = Pattern.compile("([0-9]{3}\\.){2}[0-9]{3}\\-[0-9]{2}");
-
     private final Pattern phonePattern = Pattern.compile("(\\([0-9]{2}\\)\\s9[0-9]{4}\\-?[0-9]{4})|([0-9]{2}\\s9[0-9]{8})");
-
     private final Pattern dateTimePattern = Pattern.compile("[0-9]{2}\\/[0-9]{2}\\/[0-9]{4}\\s[0-9]{2}\\:[0-9]{2}\\:[0-9]{2}");
 
     public Boolean matchesName(String string) {
