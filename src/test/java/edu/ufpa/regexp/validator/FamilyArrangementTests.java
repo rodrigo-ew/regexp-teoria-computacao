@@ -190,76 +190,75 @@ public class FamilyArrangementTests {
     }
 
     @Test
-    @DisplayName("2.f - Deve aceitar a sentença - ")
+    @DisplayName("2.f - Deve aceitar a sentença - HHmmmmmmmhmmmmmmmmhm")
     void ArrangementF1() {
-        Assertions.assertTrue();
+        Assertions.assertTrue(validator.matchesPatternF("HHmmmmmmmhmmmmmmmmhm"));
     }
 
     @Test
-    @DisplayName("2.f - Deve aceitar a sentença - ")
+    @DisplayName("2.f - Deve aceitar a sentença - MM")
     void ArrangementF2() {
-        Assertions.assertTrue();
+        Assertions.assertTrue(validator.matchesPatternF("MM"));
     }
 
     @Test
-    @DisplayName("2.f - Deve aceitar a sentença - ")
+    @DisplayName("2.f - Deve aceitar a sentença - HHhmh")
     void ArrangementF3() {
-        Assertions.assertTrue();
+        Assertions.assertTrue(validator.matchesPatternF("HHhmh"));
     }
 
     @Test
-    @DisplayName("2.f - Deve rejeitar a sentença - ")
+    @DisplayName("2.f - Deve rejeitar a sentença - MHhmh")
     void ArrangementF4() {
-        Assertions.assertFalse();
+        Assertions.assertFalse(validator.matchesPatternF("MHhmh"));
     }
 
     @Test
-    @DisplayName("2.f - Deve rejeitar a sentença - ")
+    @DisplayName("2.f - Deve rejeitar a sentença - MMmmmmmmmmmmmmmmmhmmmmmmhhm")
     void ArrangementF5() {
-        Assertions.assertFalse();
+        Assertions.assertFalse(validator.matchesPatternF("MMmmmmmmmmmmmmmmmhmmmmmmhhm"));
     }
 
     @Test
-    @DisplayName("2.f - Deve rejeitar a sentença - ")
+    @DisplayName("2.f - Deve rejeitar a sentença - HHhhm")
     void ArrangementF6() {
-        Assertions.assertFalse();
+        Assertions.assertFalse(validator.matchesPatternF("HHhhm"));
     }
-/*
+
     @Test
-    @DisplayName("2.g - Deve aceitar a sentença - ")
+    @DisplayName("2.g - Deve aceitar a sentença - H")
     void ArrangementG1() {
-        Assertions.assertTrue();
+        Assertions.assertTrue(validator.matchesPatternG("H"));
     }
 
     @Test
-    @DisplayName("2.g - Deve aceitar a sentença - ")
+    @DisplayName("2.g - Deve aceitar a sentença - HHHMMMMMHHhmhh")
     void ArrangementG2() {
-        Assertions.assertTrue();
+        Assertions.assertTrue(validator.matchesPatternG("HHHMMMMMHHhmhh"));
     }
 
     @Test
-    @DisplayName("2.g - Deve aceitar a sentença - ")
+    @DisplayName("2.g - Deve aceitar a sentença - MMMMHHHmmmmmmhm")
     void ArrangementG3() {
-        Assertions.assertTrue();
+        Assertions.assertTrue(validator.matchesPatternG("MMMMHHHmmmmmmhm"));
     }
 
     @Test
-    @DisplayName("2.g - Deve rejeitar a sentença - ")
+    @DisplayName("2.g - Deve rejeitar a sentença - mmmh")
     void ArrangementG4() {
-        Assertions.assertFalse();
+        Assertions.assertFalse(validator.matchesPatternG("mmmh"));
     }
 
     @Test
-    @DisplayName("2.g - Deve rejeitar a sentença - ")
-    void ArrangementG4() {
-        Assertions.assertFalse();
+    @DisplayName("2.g - Deve rejeitar a sentença - HHMMhmhmmmhhh")
+    void ArrangementG5() {
+        Assertions.assertFalse(validator.matchesPatternG("HHMMhmhmmmhhh"));
     }
 
     @Test
-    @DisplayName("2.g - Deve rejeitar a sentença - ")
-    void ArrangementG4() {
-        Assertions.assertFalse();
+    @DisplayName("2.g - Deve rejeitar a sentença - Mhhh")
+    void ArrangementG6() {
+        Assertions.assertFalse(validator.matchesPatternG("Mhhh"));
     }
 
- */
 }
