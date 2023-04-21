@@ -17,7 +17,21 @@ public class RegexValidatorQ2 {
 
     private final Pattern patternE = Pattern.compile("[(HH)(MM)][((hm)*h?)((mh)*m?)]");
 
-    private final Pattern patternF = Pattern.compile("[(HH)(MM)]]");
+    private final Pattern patternF = Pattern.compile("[(HH)(MM)]]m*h?(m+h?)*");
 
-    private final Pattern patternG;
+    private final Pattern patternG = Pattern.compile("(?!.*hhh)[HM]+[hm]*");
+
+    public Boolean matchesPatternA(String string) { return patternA.matcher(string).matches(); }
+
+    public Boolean matchesPatternB(String string) { return patternB.matcher(string).matches(); }
+
+    public Boolean matchesPatternC(String string) { return patternC.matcher(string).matches(); }
+
+    public Boolean matchesPatternD(String string) { return patternD.matcher(string).matches(); }
+
+    public Boolean matchesPatternE(String string) { return patternE.matcher(string).matches(); }
+
+    public Boolean matchesPatternF(String string) { return patternF.matcher(string).matches(); }
+
+    public Boolean matchesPatternG(String string) { return patternG.matcher(string).matches(); }
 }
